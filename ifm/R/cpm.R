@@ -1,25 +1,25 @@
-#' The critical path method (CPM) is a step-by-step project management technique for process 
-#' planning that defines critical and non-critical tasks with the goal of preventing time-frame
-#' problems and process bottlenecks#' activities are "critical," meaning that they have to be done on time or else 
-#' the whole project will take longer.
-#' 
+#' The Critical Path Method (CPM) is a scheduling algorithm that produces the  
+#'the minimum makespan schedule for a project with unlimited resources. As a byproduct, it generates
+#'the slacks for the non-critical activities. 
+#'Input: project activity network data  
+#'Output: early and late start and finish time for all project activities
+#'  
 #' @name cpm
 #' 
 #' @aliases critical.path.method critical_path_method
 #' 
-#' @param activities.duration Vector with activities duration.
-#' @param activities.successors Vector with dependencies between activities.
+#' @param activities.duration: vector with the duration of the project activities.
+#' @param activities.successors: list with the set of successors for each activity.
 #' 
-#' @description The Critical Path Method or Critical Path Analysis, is a 
-#' mathematically based algorithm for scheduling a set of project activities. 
+#' @description The Critical Path Method (CPM) is an algorithm that generates the minimum makespan
+#' schedule for a given project activity network with unlimited resources. 
 #' 
-#' CPM will get how long your complex project will take to complete and which 
-#' activities are "critical," meaning that they have to be done on time or else 
-#' the whole project will take longer.
+#' CPM generates also the list of non-critical activities with their respective slack.
 #' @export
-#' @return Returns list of EST (Early Start Time), EFT(Early Finish Time),LST(Lately Start Time), LFT (Lately Finish Time) using Forward Pass and Backward Pass 
+#' @return Returns a list with 4 vectors: (1) EST (Early Start Time), (2) EFT(Early Finish Time), (3) LST(Lately Start Time), 
+#' (4) LFT (Lately Finish Time) 
 #' 
-#' @keywords critical path, scheduling, project activities
+#' @keywords critical path, project scheduling, project activities
 #' 
 #' @family scheduling
 #' 
@@ -37,6 +37,7 @@ cpm <- critical.path.method <- critical_path_method <-
       activities.predecessors <- utils.suc2pred(activities.successors)
       
       activities.quantity <- length(activities.duration)
+ 
       #generates early and late start times of for a cpm network
       est<-vector (mode="numeric", length=activities.quantity)
       eft<-vector (mode="numeric", length=activities.quantity)

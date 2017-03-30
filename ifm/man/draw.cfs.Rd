@@ -2,8 +2,8 @@
 % Please edit documentation in R/draw.cfs.R
 \name{draw.cfs}
 \alias{draw.cfs}
-\alias{drawCfs}
 \alias{draw_cfs}
+\alias{drawCfs}
 \title{Draw the graph of cash flow}
 \usage{
 draw.cfs(cfs, gt = "Cash Flow Graphic", to.file = FALSE,
@@ -86,4 +86,3 @@ Other financial: \code{\link{discount.rate.vector}},
 \keyword{draw,}
 \keyword{flow}
 \keyword{series}
-

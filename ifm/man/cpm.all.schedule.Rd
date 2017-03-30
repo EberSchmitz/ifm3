@@ -6,7 +6,7 @@
 \alias{genAllCpmSched}
 \title{Generates all possible schedules for a cpm network}
 \usage{
-cpm.all.schedule(est, slack)
+cpm.all.schedule(cpm)
 }
 \arguments{
 \item{est}{early start time vector}
@@ -29,16 +29,14 @@ ex.cpm <- cpm(ex.cpm.activities.duration,
               ex.cpm.activities.successors)
 
 # Now, we have the CPM vector with:
-# - est (Early Start Time)  - ex.cpm[[1]]
-# - eft (Early Finish Time) - ex.cpm[[2]]
-# - lst (Late Start Time)   - ex.cpm[[3]]
-# - lft (Late Finish Time)  - ex.cpm[[4]]
+# - est (Early Start Time)  - ex.cpm["est"]
+# - eft (Early Finish Time) - ex.cpm["eft"]
+# - lst (Late Start Time)   - ex.cpm["lst"]
+# - lft (Late Finish Time)  - ex.cpm["lft"]
 
 ex.cpm.activities.schedule <- 
-   cpm.all.schedule(ex.cpm[['est']], ex.cpm[['lst']] - ex.cpm[['est']])
+   cpm.all.schedule(ex.cpm)
                                                
-# note: ex.cpm['lst'] - ex.cpm['est'] is the slack time (or 'float') for each task
-
 }
 \seealso{
 Other scheduling: \code{\link{cpm}},
@@ -51,4 +49,3 @@ Other scheduling: \code{\link{cpm}},
 \keyword{path,}
 \keyword{project}
 \keyword{scheduling,}
-

@@ -4,29 +4,29 @@
 \alias{cpm}
 \alias{critical.path.method}
 \alias{critical_path_method}
-\title{The critical path method (CPM) is a step-by-step project management technique for process 
-planning that defines critical and non-critical tasks with the goal of preventing time-frame
-problems and process bottlenecks#' activities are "critical," meaning that they have to be done on time or else 
-the whole project will take longer.}
+\title{The Critical Path Method (CPM) is a scheduling algorithm that produces the  
+the minimum makespan schedule for a project with unlimited resources. As a byproduct, it generates
+the slacks for the non-critical activities. 
+Input: project activity network data  
+Output: early and late start and finish time for all project activities}
 \usage{
 cpm(activities.duration = c(1, 4, 5, 7, 2, 3, 1),
   activities.successors = list(c(2, 3), 4, c(4, 5), 6, 7, 7, c(0)))
 }
 \arguments{
-\item{activities.duration}{Vector with activities duration.}
+\item{activities.duration:}{vector with the duration of the project activities.}
 
-\item{activities.successors}{Vector with dependencies between activities.}
+\item{activities.successors:}{list with the set of successors for each activity.}
 }
 \value{
-Returns list of EST (Early Start Time), EFT(Early Finish Time),LST(Lately Start Time), LFT (Lately Finish Time) using Forward Pass and Backward Pass
+Returns a list with 4 vectors: (1) EST (Early Start Time), (2) EFT(Early Finish Time), (3) LST(Lately Start Time), 
+(4) LFT (Lately Finish Time)
 }
 \description{
-The Critical Path Method or Critical Path Analysis, is a 
-mathematically based algorithm for scheduling a set of project activities. 
+The Critical Path Method (CPM) is an algorithm that generates the minimum makespan
+schedule for a given project activity network with unlimited resources. 
 
-CPM will get how long your complex project will take to complete and which 
-activities are "critical," meaning that they have to be done on time or else 
-the whole project will take longer.
+CPM generates also the list of non-critical activities with their respective slack.
 }
 \examples{
 ex.cpm.activities.duration <- c(1,4,5,7,2,3,1)
@@ -46,4 +46,3 @@ Other scheduling: \code{\link{cpm.all.schedule}},
 \keyword{path,}
 \keyword{project}
 \keyword{scheduling,}
-

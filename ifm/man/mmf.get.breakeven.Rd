@@ -45,4 +45,3 @@ Other scheduling: \code{\link{cpm.all.schedule}},
 \keyword{marketable}
 \keyword{minimum}
 \keyword{scheduling,}
-

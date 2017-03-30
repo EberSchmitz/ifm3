@@ -2,8 +2,8 @@
 % Please edit documentation in R/predecessors.to.edges.R
 \name{predecessors.to.edges}
 \alias{predecessors.to.edges}
-\alias{predecessorsToEdges}
 \alias{predecessors_to_edges}
+\alias{predecessorsToEdges}
 \title{Generate a vector with the edges to be plotted by draw.graph function.}
 \usage{
 predecessors.to.edges(list.of.predecessors = list())
@@ -30,4 +30,3 @@ Other utility: \code{\link{excel.list.to.xls}},
 }
 \keyword{draw}
 \keyword{draw.graph}
-

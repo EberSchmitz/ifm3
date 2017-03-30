@@ -2,8 +2,8 @@
 % Please edit documentation in R/excel.list.to.xls.R
 \name{excel.list.to.xls}
 \alias{excel.list.to.xls}
-\alias{excelListToXls}
 \alias{excel_list_to_xls}
+\alias{excelListToXls}
 \title{Export the generated ifm package results to a spreadsheet.}
 \arguments{
 \item{list.ifm.result}{The list with all results proccessed by the IFM 
@@ -65,4 +65,3 @@ Other utility: \code{\link{excel.xls.to.list}},
 \keyword{excel}
 \keyword{list.to.xls}
 \keyword{maxNPV}
-

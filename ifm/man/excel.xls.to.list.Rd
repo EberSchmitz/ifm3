@@ -2,8 +2,8 @@
 % Please edit documentation in R/excel.xls.to.list.R
 \name{excel.xls.to.list}
 \alias{excel.xls.to.list}
-\alias{excelXlsToList}
 \alias{excel_xls_to_list}
+\alias{excelXlsToList}
 \title{Extract a list of variables from the spreadsheet to be used on the maxNPV
  function.}
 \arguments{
@@ -33,4 +33,3 @@ Other utility: \code{\link{excel.list.to.xls}},
 \keyword{excel}
 \keyword{maxNPV}
 \keyword{xls.to.list}
-

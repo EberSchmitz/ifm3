@@ -2,8 +2,8 @@
 % Please edit documentation in R/discounted.csf.R
 \name{discounted.csf}
 \alias{discounted.csf}
-\alias{discountedCsf}
 \alias{discounted_csf}
+\alias{discountedCsf}
 \title{The cash flows incomes/outcomes applying the Tax Rate to the present time.}
 \usage{
 discounted.csf(cfs = c(-350, 100, 200, 150, 75), interest.rate = 0.0619,
@@ -40,4 +40,3 @@ Other financial: \code{\link{discount.rate.vector}},
 \keyword{cash}
 \keyword{flow}
 \keyword{series}
-

@@ -14,4 +14,3 @@ schedules.1r(sequences, durations)
 \description{
 Generates all schedules for ONE resource, Denne Method.
 }
-

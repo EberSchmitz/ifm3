@@ -2,8 +2,8 @@
 % Please edit documentation in R/draw.graph.R
 \name{draw.graph}
 \alias{draw.graph}
-\alias{drawGraph}
 \alias{draw_graph}
+\alias{drawGraph}
 \title{Draw the graph imported from the spreadsheet.}
 \arguments{
 \item{edges}{- A vector defining the edges, the first edge points from the 
@@ -22,7 +22,9 @@ edges and export the image to a file.
 ex.graph.image.path <- draw.graph(c(1,2, 1,3, 2,3, 3,4))
 
 }
+\seealso{
+Other draw: \code{\link{draw.discounted.cash}}
+}
 \keyword{draw}
 \keyword{drawGraph}
 \keyword{graph}
-

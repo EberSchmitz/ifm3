@@ -78,4 +78,3 @@ Other scheduling: \code{\link{cpm.all.schedule}},
 \keyword{minimum}
 \keyword{project}
 \keyword{scheduling,}
-

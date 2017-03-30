@@ -36,4 +36,3 @@ Other financial: \code{\link{discount.rate.vector}},
   \code{\link{ifir}}, \code{\link{net.present.value}}
 }
 \keyword{futureValue}
-

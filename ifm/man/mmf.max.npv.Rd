@@ -4,7 +4,7 @@
 \alias{mmf.max.npv}
 \title{Return Max NPV}
 \usage{
-mmf.max.npv(mmf.npv, mmf.seq, mmf.schedules)
+mmf.max.npv(mmf.npv, mmf.seq = list(), mmf.schedules = list())
 }
 \arguments{
 \item{mmf.npv}{Vector of Net Present Value}
@@ -42,4 +42,3 @@ ex.mmf.npv <- ex.mmf[['npv']]
 
 }
 \keyword{npv}
-
