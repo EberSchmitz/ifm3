@@ -7,7 +7,7 @@
 \title{The Critical Path Method (CPM) is a scheduling algorithm that produces the  
 the minimum makespan schedule for a project with unlimited resources. As a byproduct, it generates
 the slacks for the non-critical activities. 
-Input: project activity network data  
+Inputs: activity precedence relation, activity duration relation  
 Output: early and late start and finish time for all project activities}
 \usage{
 cpm(activities.duration = c(1, 4, 5, 7, 2, 3, 1),

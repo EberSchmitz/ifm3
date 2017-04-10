@@ -1,39 +1,36 @@
-#' Generates all possible schedules for a cpm network
+#' Generates all minimum makespan schedules for a cpm network
 #' 
 #' @name cpm.all.schedule
 #' 
 #' @aliases cpm_all_schedule genAllCpmSched 
 #' 
-#' @param est early start time vector
-#' @param slack activities slack
+#' @param vector with early start time for all activities
+#' @param vector with slack for all activities
 #' 
-#' @description Generates all possible schedules for a cpm network
+#' @description Generates all minimum makespan schedules for a cpm network
 #' 
 #' @export
 #' 
-#' @return Matrix with all mininum makespan (the time to complete all jobs) cpm start time schedules
+#' @return Matrix with all mininum makespan cpm schedules (start time for all activities) 
 #' 
 #' @keywords critical path, scheduling, project activities
 #' 
 #' @family scheduling
 #' 
 #' @examples
-#' #Use critical.path.method function to calculate a set of project 
-#' #activities:
 #' 
 #' ex.cpm.activities.duration <- c(1,4,5,7,2,3,1)
 #' ex.cpm.activities.successors <- list(c(2,3), 4, c(4,5), 6, 7, 7, c(0))
 #' ex.cpm <- cpm(ex.cpm.activities.duration, 
 #'               ex.cpm.activities.successors)
 #'
-#' # Now, we have the CPM vector with:
-#' # - est (Early Start Time)  - ex.cpm["est"]
-#' # - eft (Early Finish Time) - ex.cpm["eft"]
-#' # - lst (Late Start Time)   - ex.cpm["lst"]
-#' # - lft (Late Finish Time)  - ex.cpm["lft"]
+#' #ex.cpm is a list:
+#' # - est (Early Start Time)  - ex.cpm$est
+#' # - eft (Early Finish Time) - ex.cpm$eft
+#' # - lst (Late Start Time)   - ex.cpm$lst
+#' # - lft (Late Finish Time)  - ex.cpm$lft
 #'
-#' ex.cpm.activities.schedule <- 
-#'    cpm.all.schedule(ex.cpm)
+#' ex.cpm.activities.schedule <- cpm.all.schedule(ex.cpm)
 #'                                                
 cpm.all.schedule <- cpm_all_schedule <- genAllCpmSched <- 
   function(cpm){

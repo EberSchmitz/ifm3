@@ -4,38 +4,35 @@
 \alias{cpm.all.schedule}
 \alias{cpm_all_schedule}
 \alias{genAllCpmSched}
-\title{Generates all possible schedules for a cpm network}
+\title{Generates all minimum makespan schedules for a cpm network}
 \usage{
 cpm.all.schedule(cpm)
 }
 \arguments{
-\item{est}{early start time vector}
+\item{vector}{with early start time for all activities}
 
-\item{slack}{activities slack}
+\item{vector}{with slack for all activities}
 }
 \value{
-Matrix with all mininum makespan (the time to complete all jobs) cpm start time schedules
+Matrix with all mininum makespan cpm schedules (start time for all activities)
 }
 \description{
-Generates all possible schedules for a cpm network
+Generates all minimum makespan schedules for a cpm network
 }
 \examples{
-#Use critical.path.method function to calculate a set of project 
-#activities:
 
 ex.cpm.activities.duration <- c(1,4,5,7,2,3,1)
 ex.cpm.activities.successors <- list(c(2,3), 4, c(4,5), 6, 7, 7, c(0))
 ex.cpm <- cpm(ex.cpm.activities.duration, 
               ex.cpm.activities.successors)
 
-# Now, we have the CPM vector with:
-# - est (Early Start Time)  - ex.cpm["est"]
-# - eft (Early Finish Time) - ex.cpm["eft"]
-# - lst (Late Start Time)   - ex.cpm["lst"]
-# - lft (Late Finish Time)  - ex.cpm["lft"]
+#ex.cpm is a list:
+# - est (Early Start Time)  - ex.cpm$est
+# - eft (Early Finish Time) - ex.cpm$eft
+# - lst (Late Start Time)   - ex.cpm$lst
+# - lft (Late Finish Time)  - ex.cpm$lft
 
-ex.cpm.activities.schedule <- 
-   cpm.all.schedule(ex.cpm)
+ex.cpm.activities.schedule <- cpm.all.schedule(ex.cpm)
                                                
 }
 \seealso{
