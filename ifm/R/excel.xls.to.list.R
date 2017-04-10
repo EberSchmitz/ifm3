@@ -22,7 +22,7 @@
 #' @keywords excel maxNPV xls.to.list
 #' 
 #' @family utility
-#' 
+#' set
 #' @import XLConnect
 #' 
 #' @examples

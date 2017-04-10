@@ -1,11 +1,12 @@
-#' Generates the topsorts list
+#' Generates the all the topological sorts for a given activity network
 #' 
 #' @name mmf.all.sequences
 #' 
 #' @aliases mmf_all_sequences
 #' 
-#' @param predecessors List of Predecessors - Zero for none.  The index of the
-#' list of predecessors represents the id of MMF and the value.
+#' @param Predecessor activity relation.  
+#' 
+#' Representation: list of list of activity predecessors, indexed by activity id. Zero stands for empty list.
 #' @description Generates the list of all possible MMF sequences (topsorts), 
 #' constrained by the predecessors.
 #' @return List of all possible MMF sequences.
