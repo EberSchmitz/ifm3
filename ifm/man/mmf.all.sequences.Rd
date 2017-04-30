@@ -3,13 +3,14 @@
 \name{mmf.all.sequences}
 \alias{mmf.all.sequences}
 \alias{mmf_all_sequences}
-\title{Generates the topsorts list}
+\title{Generates the all the topological sorts for a given activity network}
 \usage{
 mmf.all.sequences(predecessors = 0)
 }
 \arguments{
-\item{predecessors}{List of Predecessors - Zero for none.  The index of the
-list of predecessors represents the id of MMF and the value.}
+\item{Predecessor}{activity relation.
+
+Representation: list of list of activity predecessors, indexed by activity id. Zero stands for empty list.}
 }
 \value{
 List of all possible MMF sequences.

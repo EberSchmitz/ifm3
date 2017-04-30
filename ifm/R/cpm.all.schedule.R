@@ -23,7 +23,7 @@
 #' # - eft (Early Finish Time) - ex.cpm$eft
 #' # - lst (Late Start Time)   - ex.cpm$lst
 #' # - lft (Late Finish Time)  - ex.cpm$lft
-#'
+#' ex.cpm<-cpm()
 #' ex.cpm.activities.schedule <- cpm.all.schedule(ex.cpm)
 #'                                                
 cpm.all.schedule <- cpm_all_schedule <- genAllCpmSched <- 

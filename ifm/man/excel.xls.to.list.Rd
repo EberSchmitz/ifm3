@@ -26,10 +26,6 @@ predecessor list
 ex.sheet.data <- excel.xls.to.list("../resources/spreadsheet.xls")
 
 }
-\seealso{
-Other utility: \code{\link{excel.list.to.xls}},
-  \code{\link{predecessors.to.edges}}
-}
 \keyword{excel}
 \keyword{maxNPV}
 \keyword{xls.to.list}

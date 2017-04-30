@@ -1,0 +1,512 @@
+xy<-10000*ac+100*v3+bd
+xy
+ls()
+ls()
+ls()
+ls()
+install.packages("installR")
+install.packages("installr")
+updateR()
+library(installr)
+updateR()
+ls()
+load("J:/AnaliseRisco20152/R/R.RData")
+ls()
+save.image("J:/AnaliseRisco20152/R/R.RData")
+ls()
+?sample
+x<-sample(c("H","T"),100,replace=T,c(0.5,0.5))
+x
+table(x)
+x<-sample(c("H","T"),100,replace=T,c(0.5,0.5))
+table(x)
+x<-sample(c("H","T"),1000,replace=T,c(0.5,0.5))
+table(x)
+gpx<-c(60,65,70,75,80,85,90,95,100)
+pgy<-c(1,2,6,3,5,4,2,1)
+plot(px,pgy)
+plot(gpx,pgy)
+gpy<-c(1,2,6,3,5,4,3,2,1)
+rm(pgy)
+plot(gpx,gpy)
+?plot
+plot(gpx,gpy,type="h")
+sum(gpy)
+sgp<-sum(gpy)
+gpy<-gpy/sgp
+plot(gpx,gpy,type="h")
+sample(gpx,1000,replace=T,gpy)
+x<-sample(gpx,1000,replace=T,gpy)
+str(x)
+def(x)
+summary(x)
+table(x)
+plot(table(x))
+y<-table(x)
+str(y)
+ls()
+?c
+edx<-c(24:32)
+edx
+?rep
+edy<-c(1:6,5:1)
+edy
+plot(edx,edy,type="h")
+edy<-c(1:5,4:1)
+plot(edx,edy,type="h")
+scx<-c(20:28)
+SCY<-C(1,2,2,3,3,4,5,4,3)
+SCY<-C(1,2,2,3,3,4,5,4,3)
+scy<-c(1,2,2,3,3,4,5,4,3)
+plot(scx,scy)
+gdx<-c(80,85,90,95,100,105,110,115,120)
+gdy()<-c(1,4,3,6,4,4,2,2,1)
+gdy<-c(1,4,3,6,4,4,2,2,1)
+plot(gdx,gdy)
+ls()
+rm(sgp,x,y)
+s<-sum(gdy)
+gdy<-gdy/s
+gdy
+s<-sum(gpy)
+gpy<-gpy/s
+edy
+gdy
+gpy
+scy
+s<-sum(scy)
+scy<-scy/s
+scy
+edy
+s<-sum(edy)
+edy<-edy/s
+ls()
+rm(s)
+ls()
+?data.frame
+ls()
+ed<-data.frama(x=edx,pe=edy)
+ed<-data.frame(x=edx,pe=edy)
+ed
+plot(ed$x,ed$pe)
+x<-sample(ed$x,100,ed$pe)
+x<-sample(ed$x,100,replace=T,ed$pe)
+x
+rm(edx,edy)
+ls()
+gd<-data.frame(x=gdx,pg=gdy)
+gd
+ls()
+rm(gdx,gdy)
+ls()
+gp<-data.frame(x=gpx,pgp=gpy)
+gp
+ls()
+rm(gpx,gpy)
+sc<-data.frame(x=scx,ps=scy)
+sc
+ls()
+rm(scx,scy)
+frm(x)
+rm(x)
+ls()
+str(gd)
+str(ed)
+scsample<-sample(sc$x,1000,replace=T,sc$psc)
+cssample
+scsample
+table(scample)
+table(scsample)
+NScen<-1000
+scsample<-matrix(nrow=NScen,ncol=3)
+for (i in 1:3){}
+for (i in 1:3){scsample[,i]<-sample(sc$x,1000,replace=T,sc$psc) }
+scsample
+for (i in 1:3){scsample[,i]<-sample(sc$x,1000,replace=T,sc$psc) }
+scssample[,1]+scsample[,2]
+scsample[,1]+scsample[,2]
+ls()
+scsum<-scample[,1]+scsample[,2]+scsample[,3]
+scsum<-scsample[,1]+scsample[,2]+scsample[,3]
+scum
+scsum
+table(scsum)
+plot(table(scsum))
+ls()
+str(sc)
+ls()
+NScen
+sc[2]
+str(scsample)
+summary(scsample)
+summary(scsum)
+names(sc)
+names(sc)<-c("x","p")
+names(sc)
+ls()
+names(ed)<-c("x","p")
+names(gd)<-c("x","p")
+names(gp)<-c("x","p")
+ls()
+rm(i)
+ls()
+str(ed)
+str(gd)
+str(gp)
+str(sc)
+ls()
+ls()
+scsum
+ls()
+ecdf(scsum)
+P,-ecdf(scsum)
+P<-ecdf(scsum)
+p
+P
+plot(p)
+plot(P)
+str(P)
+str(P,type="l")
+str(P,type="h")
+plot(P,type="l")
+plot(P)
+ls()
+rm(p,scsum)
+rm(P,scsum)
+ls()
+rm(NScen)
+N<-1000
+sc<-matrix(nrow=N,ncol=3)
+sc
+save.image("J:/AnaliseRisco20152/R/R.RData")
+ls()
+scx<-c(20:28)
+scy(1,2,2,3,3,4,5,4,3)
+scy<-(1,2,2,3,3,4,5,4,3)
+scy<-c(1,2,2,3,3,4,5,4,3)
+s<-sum(scy)
+scy<-scy/s
+sc<-data.frame(x=scx,p=scy)
+sc
+rm(scx,scy)
+ls()
+rm(s)
+ls()
+str(scsample)
+Kronendale<-data.frame(sc1,sc2,sc3)
+Kronendale<-matrix(nrow=N,ncol=17)
+Kronendale[,1]<-sample(sc$x,N,sc$p)
+Kronendale[,1]<-sample(sc$x,N,replace=T,sc$p)
+Kronendale[,2]<-sample(sc$x,N,replace=T,sc$p)
+Kronendale[,3]<-sample(sc$x,N,replace=T,sc$p)
+Kronendale[,4]<-sample(ed$x,N,replace=T,ed$p)
+Kronendale[,5]<-sample(ed$x,N,replace=T,ed$p)
+Kronendale[,6]<-sample(ed$x,N,replace=T,ed$p)
+Kronendale[,7]<-sample(ed$x,N,replace=T,ed$p)
+Kronendale[,8]<-sample(ed$x,N,replace=T,ed$p)
+Kronendale[,9]<-sample(gp$x,N,replace=T,gp$p)
+Kronendale[,10]<-sample(gp$x,N,replace=T,gp$p)
+Kronendale[,11]<-sample(gp$x,N,replace=T,gp$p)
+Kronendale[,12]<-sample(gp$x,N,replace=T,gp$p)
+Kronendale[,13]<-sample(gp$x,N,replace=T,gp$p)
+Kronendale[,14]<-sample(gp$x,N,replace=T,gp$p)
+Kronendale[,15]<-sample(gp$x,N,replace=T,gp$p)
+Kronendale[,16]<-sample(gp$x,N,replace=T,gp$p)
+Kronendale[,17]<-sample(gd$x,N,replace=T,gd$p)
+str(Kronendale)
+summary(Kronendale)
+KSum<-Kronendale[,1]
+for (i=2:17){Ksum<-Ksum+Kronendale[,i]}
+for (i in 2:17){Ksum<-Ksum+Kronendale[,i]}
+for (i in 2:17){Ksum<-KSum+Kronendale[,i]}
+plot(table(KSum))
+Ksum
+P<-ecdf(KSum)
+plot(P)
+ls()
+head(Kronendale)
+str(Ksum)
+str(KSum)
+ls()
+rm(Ksum)
+KSum<-Kronendale[,1]
+KSum
+for (i in 2:17){KSum<-KSum+Kronendale[,i]}
+head(KSum)
+table(KSum)
+plot(table(KSum))
+pdfKSum<-table(KSum)
+pdfKSum
+cdfKSum<-ecdf(KSum)
+str(pdfKSum)
+str(cdfKSum)
+plot(cdfKSum)
+plot(pdfKSum)
+LS()
+ls()
+rm(P,scsample)
+ls()
+?mean
+ls()
+ed
+gd
+gp
+sc
+min(sc$x)
+ls()
+cdfKSum(1000)
+cdfKSum(800)
+cdfKSum(950)
+plot(pdfKSum)
+rm(i)
+ls()
+plot(cdfKSum)
+KSUm
+KSum
+install.packages("Triangle")
+install.packages("triangle")
+triangle(2,5,3)
+rtriangle(100,2,4,5)
+?rtriangle
+rtriangle
+rtriangle()
+library(triangle)
+rtriangle(100,2,4,5)
+?rtriangle
+rtriangle(100,2,5,3)
+rtriang(100,40,120,60)
+rtriangle(100,40,120,60)
+?trunc
+ng<-round(rtriangle(N,40,60,120))
+ng
+ng<-round(rtriangle(N,40,120,60))
+ng
+cons<-rtriangle(N,45,125,65)
+cd<-cons*ng
+cd
+str(cd)
+summary(cd)
+?variance
+?var
+mean(cd)
+var(cd)
+Ndias=360
+mconsdiario<-mean(cd)
+varconsdiario<-var(cd)
+mconsdiario
+varconsdiario
+mconsanual<-Ndias*mconsdiario
+varconsanual<-Ndias*varconsdiario
+mconsanual
+dpconsanual<-sqrt(varconsanual)
+dpconsanual
+x<-rnorm(100,mconsanual,dpconsanual)
+plot(table(x))
+plot(x)
+x<-round(rnorm(100,mconsanual,dpconsanual))
+table(x)
+plot(table(x))
+?histogram
+epdf(x)
+ecdf(x)
+plot(ecdf(x))
+save.image("J:/AnaliseRisco20152/R/R.RData")
+ls()
+?density
+?aov
+library(multcomp)
+install.packages("multcomp")
+library(multcomp)
+attach(colestherol)
+attach(cholesterol)
+table(trt)
+?aggregate
+summary(response)
+response
+str(response)
+trt
+str(cholesterol)
+cholesterol
+aggregate(response,by=list(trt),FUN=mean)
+fit<-aov(reponse~trt)
+fit<-aov(response~trt)
+summary(fit)
+ls()
+cholesterol
+summary(fit)
+aggregate(response,by=list(trt),FUN=mean)
+?rbinom
+rbinom(10,1,0.1)
+?matrix
+m<-matrix(nrow=10000,ncol=1000)
+for (i in 1:1000){m[,i]<-rbinom(10000,1,0.01)}
+head(m)
+t<-vector(length=10000)
+for(i in 1:1000){t<-t+m[,i]}
+t
+for (i in 1:1000){m[,i]<-rbinom(10000,1,0.001)}
+t<-vector(length=10000)
+t<-vector(length=10000)
+t
+for (i in 1:1000){m[,i]<-rbinom(10000,1,0.001)}
+for(i in 1:1000){t<-t+m[,i]}
+t
+hist(t)
+for (i in 1:1000){m[,i]<-rbinom(10000,1,0.0001)}
+t<-vector(length=10000)
+for(i in 1:1000){t<-t+m[,i]}
+t
+hist{t}
+hist(t)
+for (i in 1:1000){m[,i]<-rbinom(10000,1,0.001)}
+m
+t<-0
+t
+t<-rep(0,1000)
+t
+t<-rep(0,10000)
+for (i in 1:1000){m[,i]<-rbinom(10000,1,0.001)}
+for(i in 1:1000){t<-t+m[,i]}
+t
+hist(t)
+ls()
+Kronendale
+ls()
+cd
+ls()
+cdfKSum
+KSum
+lucrosProdutoA <- c(2000 * 1, 3000 * 1, 4000 * 1, 5000 * 1)
+lucrosProdutoB <- c(0 * 2, 1000 * 2, 2000 * 2, 3000 * 2, 4000 * 2)
+lucrosProdutoC <- c(0 * 1.5, 1000 * 1.5, 2000 * 1.5, 3000 * 1.5, 4000 * 1.5)
+probabilidadeA <- c(0.1, 0.1, 0.2, 0.6)
+probabilidadeB <- c(0.1, 0.2, 0.2, 0.4, 0.1)
+probabilidadeC <- c(0.1, 0.3, 0.3, 0.2, 0.1)
+acumuladaA = ecdf(lucrosProdutoA)
+acumuladaB = ecdf(lucrosProdutoB)
+acumuladaC = ecdf(lucrosProdutoC)
+plot(
+x = lucrosProdutoA, y = probabilidadeA,
+xlim = range(c(0,10000)), ylim = c(0, 1),
+col = "blue", type = "l",
+xlab = "Lucro dos Produtos", ylab = "Probabilidades",
+main = "AnÃ¡lise de ProduÃ§Ã£o"
+)
+points(x = lucrosProdutoB, y = probabilidadeB, col = "red",  type = "l")
+points(x = lucrosProdutoC, y = probabilidadeC, col = "green",  type = "l")
+text(x = 5000, y = 0.65, labels = "A", col = "blue")
+text(x = 8000, y = 0.15, labels = "B", col = "red")
+text(x = 6000, y = 0.15, labels = "C", col = "green")
+plot(
+x = 1, y = 1, type="l",
+xlim = c(0,10000), ylim=c(0, 1),
+pch=21, bg="blue",
+xlab="Lucro dos Produtos", ylab="Probabilidades",
+main="AnÃ¡lise de ProduÃ§Ã£o")
+lines(acumuladaA, col = "blue")
+lines(acumuladaB, col = "red")
+lines(acumuladaC, col = "green")
+source('H:/EstrategiaTI/Trabalhos/estrategias-empresariais-master/grupo-1/listas/lista-1/lista-1.R')
+lista1()
+lista1()
+# Exemplo de Dominancia Estocastica
+x1 <- 1:3
+y1 <- c(1/6, 2/6, 3/6)
+x2 <- c(0.5, 1.5)
+y2 <- c(0.5, 0.5)
+p = ecdf(x1)
+p2 = ecdf(x2)
+plot(x1,y1, xlim = range(c(0,5)), ylim = c(0, 1), col = "blue", xlab = "Ganhos", ylab = "Probabilidades", main = "Exemplo Dominância estocástica")
+points(x2,y2, col = "red")
+lines(p2, col = "red")
+lines(p, col = "blue")
+#Exercicio do Eber
+ax = c(2000, 3000, 4000, 5000)
+ay = c(0.1, 0.1, 0.2, 0.6)
+bx = c(0, 1000, 2000, 3000, 4000)
+by = c(0.1, 0.2, 0.2, 0.4, 0.1)
+cx = c(0, 1000, 2000, 3000, 4000)
+cy = c(0.1, 0.3, 0.3, 0.2, 0.1)
+contribuicao = c(1, 2, 1.5)
+names(contribuicao)[1] <- "A"
+names(contribuicao)[2] <- "B"
+names(contribuicao)[3] <- "C"
+lucrosAx <- ax * contribuicao["A"]
+lucrosBx <- bx * contribuicao["B"]
+lucrosCx <- cx * contribuicao["C"]
+pA = ecdf(lucrosAx)
+pB = ecdf(lucrosBx)
+pC = ecdf(lucrosCx)
+plot(ax,ay, xlim = range(c(-1000,7000)), ylim=c(0, 1), pch=21, bg="blue", xlab="Lucros", ylab="Probabilidades", main="Exercicio de Dominância estocástica")
+points(bx,by, pch=21, bg="red")
+points(cx,cy, pch=21, bg="green4")
+plot(5, 5, type="n", xlim = range(c(-1000,7000)), ylim=c(0, 1), pch=21, bg="blue", xlab="Lucros", ylab="Probabilidades", main="Exercicio de Dominância estocástica")
+lines(pA, col = "red")
+lines(pB, col = "blue")
+lines(pC, col = "green4")
+install.packages("shiny")
+?shiny
+help(shiny)
+library(shiny)
+help(shiny)
+x<-c(1,2,3)
+y<-c("a","b")
+z<-expand.grid(x,y)
+z
+ad1<-c("AP1","AP2","AS")
+cd2<-c("b40","b20")
+dd3<-c("DS","DP2")
+ed4<-c("Eb40","Eb20")
+cd2<-c("Cb40","Cb20")
+fd5<-c("Fb40","Fb20")
+x<-expand.grid(ad1,cd2,dd3,ed4,fd5)
+x
+x
+?write.csv
+write.csv(x,file="strat.csv")
+getwd()
+getwd()
+setwd("~/GitHub/ifm3")
+source('~/GitHub/ifm3/build.package.R')
+utils.build()
+setwd("~/GitHub/ifm3/ifm/R")
+source('~/.active-rstudio-document')
+setwd("~/GitHub/ifm3")
+utils.build()
+source('~/GitHub/ifm3/ifm/R/cpm.R')
+setwd("~/GitHub/ifm3/ifm/R")
+setwd("~/GitHub/ifm3")
+utils.build()
+utils.build()
+setwd("~/GitHub/ifm3/ifm/R")
+source('~/GitHub/ifm3/ifm/R/cpm.all.schedule.R')
+source('~/GitHub/ifm3/ifm/R/cpm.all.schedule.R')
+setwd("~/GitHub/ifm3")
+utils.build()
+getwd()
+setwd("~/GitHub/ifm3/ifm/R")
+source('~/.active-rstudio-document')
+source('~/GitHub/ifm3/ifm/R/cpm.R')
+source('~/GitHub/ifm3/ifm/R/mmf.all.sequences.R')
+x<-list(0,1,2,3,1,5,c(4,6))
+mmf.all.sequences(x)
+source('~/GitHub/ifm3/ifm/R/mmf.all.sequences.R')
+../resources
+cd ../resources
+setwd(../resources)
+setwd("../resources")
+getwd()
+setwd("../")
+getwd()
+setwd("../resources")
+getwd()
+setwd("../ifm/R")
+getwd()
+source('~/GitHub/ifm3/ifm/R/excel.xls.to.list.R')
+t<-excel.xls.to.list("../resources/spreadsheet.xls")
+getwd()
+t<-excel.xls.to.list("../../resources/spreadsheet.xls")
+source('~/GitHub/ifm3/ifm/R/predecessors.to.edges.R')
+t<-excel.xls.to.list("../../resources/spreadsheet.xls")
+t
+str(t)

@@ -59,8 +59,7 @@ ex.file.path <- excel.list.to.xls(ex.mmf.df.1r)
 
 }
 \seealso{
-Other utility: \code{\link{excel.xls.to.list}},
-  \code{\link{predecessors.to.edges}}
+Other utility: \code{\link{predecessors.to.edges}}
 }
 \keyword{excel}
 \keyword{list.to.xls}
