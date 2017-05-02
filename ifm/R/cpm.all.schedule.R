@@ -25,34 +25,40 @@
 #' # - lft (Late Finish Time)  - ex.cpm$lft
 #' ex.cpm<-cpm()
 #' ex.cpm.activities.schedule <- cpm.all.schedule(ex.cpm)
-#'                                                
+#'                                                                    
 cpm.all.schedule <- cpm_all_schedule <- genAllCpmSched <- 
-  function(cpm){
-  est <- cpm$est
-  slack <- (cpm$lst - cpm$est)
-  
-  # Constants
-  slack1 <- slack + 1
-  m <- prod(slack1)
-  n <- length(slack)
-  
-  # Variables
-  sched.list<-list(length=n)
-  
-  #Algorithm
-  #1-generate est sequence for all activities
-  for (i in 1:n){
-    if (slack[i]==0){
-      sched.list[i]<-est[i]
-    }
-    else{
-      sched.list[[i]]<-seq(from=est[i],to=est[i]+slack[i])
+  function(cpm, predecessors){
+    est <- cpm$est
+    lst <- cpm$lst
+    slack <- (lst - est)
+    
+    # Constants
+    slack1 <- slack + 1
+    m <- prod(slack1)
+    n <- length(slack)
+    
+    # Variables
+    sched.list<-list(length=n)
+    
+    #Algorithm
+    #1-generate est sequence for all activities
+    for (i in 1:n){
+      if (slack[i]==0){
+        sched.list[i]<-est[i]
+      }
+      else{
+        lstMax <- 0
+        for (j in predecessors[i]) {
+          if (lstMax < lst[j]) {
+            lstMax <- lst[j]
+          }
+        }
+        sched.list[[i]]<-seq(from=est[i]+lstMax,to=est[i]+lstMax+slack[i])
+      }
     }
     
+    #2-generate the cartesian product of all ests
+    all.sched<-expand.grid(sched.list) 
+    
+    return(as.matrix(all.sched[,1:n]))
   }
- 
-  #2-generate the cartesian product of all ests
-  all.sched<-expand.grid(sched.list) 
-    
-  return(as.matrix(all.sched[,1:n]))
-}
